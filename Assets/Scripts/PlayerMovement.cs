@@ -85,6 +85,8 @@ public class PlayerMovement : MonoBehaviour
             Debug.LogWarning("Bullet prefab does not have a Rigidbody2D!");
             Destroy(bullet);
         }
+
+        Destroy(bullet, 3f);
     }
 
     void CheckIfGrounded()
